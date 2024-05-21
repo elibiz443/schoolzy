@@ -35,3 +35,4 @@ end
 
 gem "simple_form", "~> 5.1.0"
 gem 'inline_svg'
+gem 'cancancan'
