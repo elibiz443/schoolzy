@@ -15,6 +15,9 @@ class CreateUsers < ActiveRecord::Migration[7.1]
       t.integer :total_salary
       t.integer :salary_paid
       t.boolean :lunch_money_status
+      t.string :gurdian_contact
+      t.string :username
+      t.string :password_digest
 
       t.timestamps
     end
