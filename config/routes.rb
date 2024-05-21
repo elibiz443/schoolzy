@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'users/index'
+  get 'users/new'
+  get 'users/edit'
+  get 'users/show'
+  get 'users/index'
+  get 'users/new'
+  get 'sessions/index'
+  get 'sessions/new'
   get 'dashboard/index'
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
