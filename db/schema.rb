@@ -29,6 +29,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_05_21_215414) do
     t.integer "total_salary", default: 0
     t.integer "salary_paid", default: 0
     t.boolean "lunch_money_status", default: false
+    t.boolean "active", default: true
     t.string "gurdian_contact", default: ""
     t.string "username"
     t.string "password_digest"

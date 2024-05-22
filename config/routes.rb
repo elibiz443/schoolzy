@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#index'
   get "logout", to: "sessions#destroy"
   get 'signup', to: 'users#new'
-  resources :users, only: [:create, :update, :destroy]
+  resources :users, only: [:create, :update, :destroy, :deregister]
   resources :sessions, only: [:new]
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.

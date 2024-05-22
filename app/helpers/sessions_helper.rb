@@ -12,6 +12,8 @@ module SessionsHelper
   end
 
   def authorized!
-    redirect_to '/' unless logged_in?
+    if controller_name != "dashboard"
+      redirect_to '/' unless logged_in?
+    end
   end
 end
